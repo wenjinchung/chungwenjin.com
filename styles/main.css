@@ -220,9 +220,11 @@ h3 {
 }
 
 .quote-icon {
-  width: 20px;
-  height: auto;
+  width: auto;
+  height: 28px;
   color: var(--brand);
+  align-self: flex-start;
+  padding-bottom: 4px;
 }
 
 .testimonial-text {
@@ -486,6 +488,29 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* ---------- Zenyum Case Study ---------- */
+.zenyum-solution-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.zenyum-solution {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zenyum-solution p,
+.zenyum-solution .case-solution-text {
+  max-width: 50%;
+  order: -1;
+}
+
+.zenyum-solution .case-image {
+  width: 100%;
 }
 
 /* ---------- Site Footer ---------- */
@@ -976,7 +1001,7 @@ h3 {
 
   /* Site Footer */
   .site-footer {
-    margin: 60px 16px 0;
+    margin: 120px 16px 0;
   }
 
   .footer-grid {
@@ -986,6 +1011,84 @@ h3 {
 
   .footer-copyright {
     margin-top: 40px;
+  }
+
+  /* Case Study */
+  .case-hero {
+    padding: 120px 16px 0;
+  }
+
+  .case-hero-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .case-number,
+  .case-title {
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  .case-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-metadata {
+    padding: 0 16px;
+    margin-bottom: 120px;
+  }
+
+  .metadata-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metadata-items {
+    grid-column: 1;
+  }
+
+  .metadata-item {
+    grid-template-columns: 72px 1fr;
+    gap: 20px;
+  }
+
+  .case-section {
+    margin: 60px 16px 120px;
+  }
+
+  .case-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .case-issue {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .case-text {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .case-solution {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .case-solution p,
+  .case-solution .case-solution-text {
+    order: -1;
+  }
+
+  .case-summary {
+    max-width: 100%;
+  }
+
+  /* Zenyum Solution */
+  .zenyum-solution p,
+  .zenyum-solution .case-solution-text {
+    max-width: 100%;
   }
 }
 

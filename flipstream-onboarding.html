@@ -14,7 +14,8 @@
   <header id="site-header">
     <nav class="navbar">
       <a href="/" class="nav-logo">Chung Wenjin</a>
-      <div class="nav-links">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-links" id="nav-menu">
         <a href="/#projects" class="nav-link">Work</a>
         <a href="/about.html" class="nav-link">About</a>
         <a href="assets/Resume-ChungWenjin.pdf" class="nav-link" target="_blank" rel="noopener">Resume</a>
@@ -48,11 +49,11 @@
           </dl>
           <dl class="metadata-item">
             <dt>Scope</dt>
-            <dd>B2B Desktop web app</dd>
+            <dd>B2B; Desktop web app</dd>
           </dl>
           <dl class="metadata-item">
             <dt>Year</dt>
-            <dd>2023</dd>
+            <dd>2025</dd>
           </dl>
           <dl class="metadata-item">
             <dt>Context</dt>
@@ -175,7 +176,7 @@
         </nav>
       </div>
       <div class="footer-column">
-        <span class="footer-heading">Contacts</span>
+        <span class="footer-heading">Contact</span>
         <nav class="footer-links">
           <a href="mailto:wenjin.chung@gmail.com">wenjin.chung@gmail.com</a>
           <a href="https://linkedin.com/in/wenjinchung" target="_blank" rel="noopener">LinkedIn</a>
@@ -185,5 +186,24 @@
     <p class="footer-copyright">&copy; Chung Wenjin 2026</p>
   </footer>
 
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isOpen);
+      navToggle.textContent = isOpen ? 'Menu' : 'Close';
+      navMenu.classList.toggle('nav-open', !isOpen);
+    });
+
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = 'Menu';
+        navMenu.classList.remove('nav-open');
+      });
+    });
+  </script>
 </body>
 </html>
