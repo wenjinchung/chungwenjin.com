@@ -14,6 +14,8 @@ html {
 main {
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 section {
@@ -531,12 +533,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--text-secondary);
-}
-
-.solution-label span:first-child {
   font-weight: 700;
   color: var(--text-primary);
 }
@@ -549,6 +545,28 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.solution-video {
+  width: 100%;
+  background: #081C38;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solution-video video {
+  max-height: 412px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.solution-images-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .zenyum-app-outputs {
@@ -581,28 +599,52 @@ h3 {
 }
 
 /* Proof of Concept */
+.case-section-content.poc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
 .case-intro-text {
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 40px;
 }
 
 .poc-banner {
-  margin-bottom: 40px;
+  grid-column: span 2;
+}
+
+.case-video.poc-banner {
+  justify-self: start;
+}
+
+.case-video video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(0.9 * (100vh - 60px));
+  object-fit: contain;
+  display: block;
 }
 
 .case-learnings {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .learnings-label {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
   color: var(--text-primary);
+}
+
+.learning-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .learning-item {
@@ -614,7 +656,7 @@ h3 {
 .learning-item h4 {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   margin: 0;
 }
@@ -622,6 +664,7 @@ h3 {
 .learning-item p {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
   color: var(--text-secondary);
   margin: 0;
 }
@@ -1230,16 +1273,25 @@ h3 {
   }
 
   /* Proof of Concept */
-  .case-intro-text {
-    margin-bottom: 24px;
+  .case-section-content.poc-grid {
+    grid-template-columns: 1fr;
   }
 
   .poc-banner {
-    margin-bottom: 24px;
+    grid-column: span 1;
   }
 
   .case-learnings {
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .solution-video {
+    padding: 20px;
+  }
+
+  .solution-video video {
+    max-height: 160px;
   }
 }
 
