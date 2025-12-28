@@ -474,7 +474,7 @@ h3 {
 /* Block: case-solution (image left, text right) */
 .case-solution {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
   align-items: start;
 }
@@ -511,6 +511,119 @@ h3 {
 
 .zenyum-solution .case-image {
   width: 100%;
+}
+
+/* ---------- Zenyum App Case Study ---------- */
+.zenyum-app-solutions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.zenyum-app-solution {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.solution-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-secondary);
+}
+
+.solution-label span:first-child {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.solution-image {
+  width: 100%;
+}
+
+.solution-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zenyum-app-outputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.output-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.output-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.output-image {
+  width: 100%;
+}
+
+.output-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Proof of Concept */
+.case-intro-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+
+.poc-banner {
+  margin-bottom: 40px;
+}
+
+.case-learnings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.learnings-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.learning-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.learning-item h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.learning-item p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 /* ---------- Site Footer ---------- */
@@ -641,12 +754,22 @@ h3 {
 }
 
 .clients-grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
   border-top: 1px solid var(--border-primary);
   padding-top: 20px;
   align-items: start;
+}
+
+.peeping-cat {
+  position: absolute;
+  top: 0;
+  right: 140px;
+  height: 30px;
+  width: auto;
+  transform: translateY(-100%);
 }
 
 .clients-title {
@@ -970,6 +1093,10 @@ h3 {
     justify-content: flex-start;
   }
 
+  .peeping-cat {
+    right: 60px;
+  }
+
   .client-row {
     grid-template-columns: 1fr;
     gap: 4px;
@@ -1089,6 +1216,30 @@ h3 {
   .zenyum-solution p,
   .zenyum-solution .case-solution-text {
     max-width: 100%;
+  }
+
+  /* Zenyum App */
+  .zenyum-app-solution {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .zenyum-app-outputs {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Proof of Concept */
+  .case-intro-text {
+    margin-bottom: 24px;
+  }
+
+  .poc-banner {
+    margin-bottom: 24px;
+  }
+
+  .case-learnings {
+    gap: 20px;
   }
 }
 
