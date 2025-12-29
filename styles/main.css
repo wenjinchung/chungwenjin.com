@@ -569,6 +569,12 @@ h3 {
   gap: 20px;
 }
 
+.solution-images-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
 .zenyum-app-outputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1292,6 +1298,10 @@ h3 {
 
   .solution-video video {
     max-height: 160px;
+  }
+
+  .solution-images-row {
+    grid-template-columns: 1fr;
   }
 }
 
