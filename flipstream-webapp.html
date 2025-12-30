@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flipstream Pulse Web App</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Stack+Sans+Headline:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+
+<body>
+  <header id="site-header">
+    <nav class="navbar">
+      <a href="/" class="nav-logo">Chung Wenjin</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-links" id="nav-menu">
+        <a href="/#projects" class="nav-link">Work</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="assets/Resume-ChungWenjin.pdf" class="nav-link" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="case-study">
+    <!-- Case hero -->
+    <section class="case-hero">
+      <div class="case-hero-header">
+        <span class="case-number">02</span>
+        <div class="case-intro">
+          <h1 class="case-title">Flipstream</h1>
+          <h1 class="case-title">Pulse Web App</h1>
+          <p class="case-subtitle">Leading the design of a data insights platform built for marketing agencies to make faster, better decisions and streamline client reporting.</p>
+        </div>
+      </div>
+      <div class="case-hero-image">
+        <img src="assets/images/case-studies/flipstream-webapp/Hero.jpg" alt="Flipstream Pulse web app">
+      </div>
+    </section>
+
+    <!-- Case metadata -->
+    <section class="case-metadata">
+      <div class="metadata-grid">
+        <div class="metadata-items">
+          <dl class="metadata-item">
+            <dt>Client</dt>
+            <dd>Flipstream</dd>
+          </dl>
+          <dl class="metadata-item">
+            <dt>Scope</dt>
+            <dd>B2B; Desktop web app</dd>
+          </dl>
+          <dl class="metadata-item">
+            <dt>Year</dt>
+            <dd>2024-2025</dd>
+          </dl>
+          <dl class="metadata-item">
+            <dt>Context</dt>
+            <dd>Based on our dashboard-centric MVP, we learnt that decision-makers wanted clarity, not more dashboards, while analysts needed more flexible ways to extract insights quickly. Hence we designed Pulse's core experience from data visualization to insights delivery, supporting how agencies actually work.<br><br>With a small team under tight constraints, we adopted existing systems (Untitled UI, AG-Grid, AG-Charts) to reduce component-level work and focus on designing the experiences that drive value for users.</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <!-- User goal -->
+    <section class="case-section">
+      <div class="case-section-heading">
+        <h3>User goal</h3>
+      </div>
+
+      <div class="case-section-content">
+        <div class="case-image">
+          <img src="assets/images/case-studies/flipstream-webapp/user-goal.jpg" alt="User goal diagram">
+        </div>
+
+        <div class="flipstream-learnings">
+          <div class="case-learnings">
+            <span class="learnings-label">What does this mean?</span>
+            <div class="learning-items">
+              <div class="learning-item">
+                <h4>Clarity over exploration</h4>
+                <p>Users are trying to make decisions, not discover data.</p>
+              </div>
+              <div class="learning-item">
+                <h4>Flexible outputs</h4>
+                <p>Whether insights surface as tables, charts, or alerts matters less than how quickly users can understand and act on them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="case-section">
+      <div class="case-section-heading">
+        <h3>Solution</h3>
+      </div>
+
+      <div class="case-section-content flipstream-solutions">
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Clients</span>
+            <p>The Pulse app is structured into client spaces, mirroring real agency workflows. </p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-clients.jpg" alt="Clients">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Insights Center</span>
+            <p>A single place to monitor performance across all managed clients, answering “What needs my attention today?”</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-insights-center.jpg" alt="Insights Center">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Widget Studio</span>
+            <p>Widgets are a flexible building block system for creating reusable data views. In the Widget Studio, users can easily extract KPIs without going through dashboards.</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-widget-studio.jpg" alt="Widget Studio">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Dashboards</span>
+            <p>A curated dashboard library co-developed with a user test panel tailored to common agency use cases.</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-dashboards.jpg" alt="Dashboards">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Dashboards: Edit mode</span>
+            <p>Advanced users can modify dashboards using predefined templates and widgets. This is designed to balance flexibility with control.</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-dashboards-edit-mode.jpg" alt="Dashboards Edit mode">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">Custom Fields</span>
+            <p>Users can adapt the data model to their own internal workflows so that the data works with existing processes.</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-custom-fields.jpg" alt="Custom Fields">
+          </div>
+        </article>
+
+        <article class="flipstream-solution">
+          <div class="solution-text">
+            <span class="solution-title">SERP Scraper</span>
+            <p>An integrated Google Search Engine Results Page (SERP) Scraper enables users to track keyword rankings directly within Pulse, while creating cross-sell opportunities for the business.</p>
+          </div>
+          <div class="solution-image">
+            <img src="assets/images/case-studies/flipstream-webapp/solution-serp-scraper.jpg" alt="SERP Scraper">
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-name">Chung Wenjin</a>
+      </div>
+      <div class="footer-column">
+        <span class="footer-heading">Work</span>
+        <nav class="footer-links">
+          <a href="/flipstream-onboarding.html">Flipstream Onboarding & Activation</a>
+          <a href="/flipstream-webapp.html">Flipstream Pulse Web App</a>
+          <a href="/zenyum-app.html">Zenyum Mobile App Revamp</a>
+          <a href="/zenyum-checkout.html">Zenyum Aligners Self-checkout</a>
+        </nav>
+      </div>
+      <div class="footer-column">
+        <span class="footer-heading">Contact</span>
+        <nav class="footer-links">
+          <a href="mailto:wenjin.chung@gmail.com">wenjin.chung@gmail.com</a>
+          <a href="https://linkedin.com/in/wenjinchung" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+    </div>
+    <p class="footer-copyright">&copy; Chung Wenjin 2026</p>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isOpen);
+      navToggle.textContent = isOpen ? 'Menu' : 'Close';
+      navMenu.classList.toggle('nav-open', !isOpen);
+    });
+
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.textContent = 'Menu';
+        navMenu.classList.remove('nav-open');
+      });
+    });
+  </script>
+</body>
+</html>

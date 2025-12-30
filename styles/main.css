@@ -675,6 +675,46 @@ h3 {
   margin: 0;
 }
 
+/* ---------- Flipstream Web App Case Study ---------- */
+.flipstream-learnings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.flipstream-learnings .case-learnings {
+  margin-top: 0;
+}
+
+.flipstream-solutions {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.flipstream-solution {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.solution-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.solution-title {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.solution-text p {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
 /* ---------- Site Footer ---------- */
 .site-footer {
   margin: 120px 24px 0;
@@ -1302,6 +1342,16 @@ h3 {
 
   .solution-images-row {
     grid-template-columns: 1fr;
+  }
+
+  /* Flipstream Web App */
+  .flipstream-learnings {
+    grid-template-columns: 1fr;
+  }
+
+  .flipstream-solution {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
