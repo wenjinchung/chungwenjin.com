@@ -262,7 +262,7 @@ h3 {
 
 /* ---------- Contact ---------- */
 #contact {
-  padding: 0 24px;
+  padding: 120px 24px 0px;
 }
 
 .contact-grid {
@@ -272,7 +272,7 @@ h3 {
 }
 
 .contact-content {
-  grid-column: 2;
+  grid-column: 1;
 }
 
 .contact-heading {
