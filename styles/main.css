@@ -610,6 +610,46 @@ h3 {
   color: var(--text-primary);
 }
 
+/* ---------- Flipstream Design System ---------- */
+.system-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.system-item {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  align-items: start;
+}
+
+.system-label {
+  grid-column: span 2;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.system-content {
+  grid-column: span 10;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 20px;
+}
+
+.system-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.system-content .span-3 { grid-column: span 3; }
+.system-content .span-4 { grid-column: span 4; }
+.system-content .span-5 { grid-column: span 5; }
+.system-content .span-6 { grid-column: span 6; }
+.system-content .span-8 { grid-column: span 8; }
+.system-content .span-10 { grid-column: span 10; }
+
 /* ---------- Zenyum Case Study ---------- */
 .zenyum-solution-grid {
   display: flex;
@@ -1469,6 +1509,31 @@ h3 {
   }
 
   .marketing-asset {
+    grid-column: auto;
+  }
+
+  /* Flipstream Design System */
+  .system-item {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .system-label,
+  .system-content {
+    grid-column: auto;
+  }
+
+  .system-content {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .system-content .span-3,
+  .system-content .span-4,
+  .system-content .span-5,
+  .system-content .span-6,
+  .system-content .span-8,
+  .system-content .span-10 {
     grid-column: auto;
   }
 
