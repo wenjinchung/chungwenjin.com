@@ -260,9 +260,57 @@ h3 {
   color: var(--text-secondary);
 }
 
+/* ---------- Archive ---------- */
+#archive {
+  padding: 80px 24px 20px;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 1px solid var(--border-primary);
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.archive-heading {
+  font-weight: 600;
+}
+
+.archive-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.archive-thumbnail {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.archive-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.archive-title {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.archive-title strong {
+  font-weight: 700;
+}
+
+.archive-card:hover .archive-title {
+  text-decoration: underline;
+}
+
 /* ---------- Contact ---------- */
 #contact {
-  padding: 120px 24px 0px;
+  padding: 60px 24px 0px;
 }
 
 .contact-grid {
@@ -355,6 +403,27 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.case-hero-simple {
+  padding: 100px 24px 0;
+  margin-bottom: 60px;
+}
+
+.case-metadata-left {
+  justify-content: flex-start;
+}
+
+.case-metadata-left .metadata-items {
+  grid-column: 1;
+}
+
+.case-title-simple {
+  font-family: 'Stack Sans Headline', system-ui, sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* ---------- Case Study Metadata ---------- */
@@ -490,6 +559,55 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* ---------- Flipstream Brand Book ---------- */
+.brandbook-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background: #20102F;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+  margin-right: -24px;
+  padding: 24px;
+}
+
+.brandbook-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.brandbook-colours {
+  grid-column: 1;
+  grid-row: span 2;
+}
+
+.brandbook-tone,
+.brandbook-theme {
+  grid-column: 2;
+}
+
+.marketing-assets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+
+.marketing-asset {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.marketing-asset-label {
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 /* ---------- Zenyum Case Study ---------- */
@@ -1007,7 +1125,8 @@ h3 {
     padding-right: 16px;
   }
 
-  #testimonials {
+  #testimonials,
+  #archive {
     padding: 80px 16px 20px;
   }
 
@@ -1113,6 +1232,21 @@ h3 {
   .author-avatar {
     width: 80px;
     height: 80px;
+  }
+
+  /* Archive */
+  .archive-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .archive-heading {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .archive-card:hover .archive-title {
+    text-decoration: none;
   }
 
   /* Contact */
@@ -1299,6 +1433,43 @@ h3 {
 
   .case-summary {
     max-width: 100%;
+  }
+
+  /* Flipstream Brand Book */
+  .case-hero-simple {
+    padding: 120px 16px 0;
+  }
+
+  .case-title-simple {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .brandbook-grid {
+    grid-template-columns: 1fr;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+  }
+
+  .brandbook-logo,
+  .brandbook-colours {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .brandbook-tone,
+  .brandbook-theme {
+    grid-column: auto;
+  }
+
+  .marketing-assets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-asset {
+    grid-column: auto;
   }
 
   /* Zenyum Solution */
