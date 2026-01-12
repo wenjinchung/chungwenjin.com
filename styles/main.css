@@ -219,6 +219,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  grid-column: span 2;
 }
 
 .quote-icon {
@@ -319,7 +320,7 @@ h3 {
 }
 
 .contact-content {
-  grid-column: 1;
+  grid-column: 2;
 }
 
 .contact-heading {
