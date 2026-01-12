@@ -268,9 +268,15 @@ h3 {
 
 .archive-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   border-top: 1px solid var(--border-primary);
   padding-top: 20px;
+  gap: 20px;
+}
+
+.archive-cards {
+  grid-column: span 2;
+  display: flex;
   gap: 20px;
 }
 
@@ -1325,6 +1331,19 @@ h3 {
   .archive-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .archive-cards {
+    grid-column: span 2;
+    flex-wrap: wrap;
+  }
+
+  .archive-cards .archive-card {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .archive-cards .archive-card:last-child {
+    flex-grow: 0;
   }
 
   .archive-heading {
